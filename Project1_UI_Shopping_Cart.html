@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Shopping Cart UI</title>
+    
+    <!-- The following line references an external css file -->
+    <!-- It defines style rules for your page, and elements in your page -->
+    <link href="style_project1.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(225, 237, 247);
+        }
+    </style>
+</head>
+<body onload="startTime()">  
+    <div class="right">
+        <button onclick="deleteItem()" class="button button1"> Delete Item </button>
+        <p></p>
+        <button onclick="printItems()" class="button button2"> Add Next Item to Cart </button>
+        <p></p>
+        <button onclick="addQuantity()" class="button button3"> Add Quantity </button>
+        <p></p>
+        <div class="upNext">
+            <p> Grocery List: </p>
+            <div class="list">
+                2 lb Chicken Nuggets
+                <p></p>
+                3 lb Ground Beef
+                <p></p>
+                16 oz rice
+                <p></p>
+                6 oz spinach
+                <p></p>
+                1 gallon milk
+            </div> 
+        </div>
+        <p></p>
+        <button onclick="document.location='Project1_UI_Shopping_Cart_Map.html'" class="button button4"> Search Item </button>
+        <p></p>
+        <button onclick="document.location='Project1_UI_Shopping_Cart_Checkout.html'" class="button button5"> Checkout </button>
+    </div>
+    <div class="items">
+        Items
+        <div class="items1">
+            <p></p>
+            <div id="Item1"></div>
+            <p></p>
+            <div id="Item2"></div>
+            <p></p>
+            <div id="Item3"></div>
+            <p></p>
+            <div id="Item4"></div>
+            <p></p>
+            <div id="Item5"></div>
+        </div> 
+    </div>
+    <div class="quantity">
+        Qty
+        <div class="quantity1">
+        <p></p>
+        <div id="Quantity1"></div>
+        <p></p>
+        <div id="Quantity2"></div>
+        <p></p>
+        <div id="Quantity3"></div>
+        <p></p>
+        <div id="Quantity4"></div>
+        <p></p>
+        <div id="Quantity5"></div>
+    </div>
+    </div>
+    <div class="center">
+        Cost
+        <div class="center2">
+            Total: <div id= "Total"></div>
+        </div>
+        <div class="center1">
+            <p></p>
+            <div id="Price1"></div>
+            <p></p>
+            <div id="Price2"></div>
+            <p></p>
+            <div id="Price3"></div>
+            <p></p>
+            <div id="Price4"></div>
+            <p></p>
+            <div id="Price5"></div>
+        </div>
+    </div>
+    <div class="time">
+        <div id="txt"></div>
+    </div>
+    <!-- Load external JS files -->
+    <!-- This is where you will do most of the 'work' for your applications -->
+    <script src="Project1_main.js"></script>
+</body>
+</html>
